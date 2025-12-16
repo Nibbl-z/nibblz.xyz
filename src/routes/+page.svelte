@@ -27,12 +27,16 @@
 
 <div class="flex flex-col items-center">
     
-    <div class="w-full lg:flex pb-10 lg:pb-30">
-        <img src="banner.png" alt="banner" class="w-full lg:w-[45%] object-left object-contain" style="image-rendering: pixelated">
-        <div class="w-full lg:w-[50%] flex-col lg:pt-20">
-            <h1 class="text-9xl text-center w-full">hai, i'm</h1>
-            <img src="name_plate.png" alt="nibbles" class="h-[15em] object-center w-full object-contain" style="image-rendering: pixelated">
+    <div class="w-full h-110 md:h-150 absolute -z-10">
+        <img src="banner.png" alt="banner" class="w-full h-full object-cover object-top-left" style="image-rendering: pixelated">
+    </div>
+    <div class="w-full flex-col pt-80 lg:pt-30">
+        <h1 class="text-9xl text-center w-full text-shadow-lg/50">hai, i'm</h1>
+        <div>
+            <img src="name_plate.png" alt="nibbles" class="h-[15em] object-center w-full object-contain absolute z-10" style="image-rendering: pixelated">
+            <img src="name_plate_blur.png" alt="nibbles" class="h-[15em] object-center w-full object-contain blur-md" style="image-rendering: pixelated">
         </div>
+        
     </div>
     <p class="text-4xl pt-5 text-center pl-3 pr-3">i'm a programmer/game developer/music composer who's been making stuff for over 5 years!!</p>
     <p class="text-3xl pt-5 text-center pl-3 pr-3">here are some languages i know sorted by how much i like them!</p>
