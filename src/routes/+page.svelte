@@ -26,12 +26,18 @@
 </script>
 
 <div class="flex flex-col items-center">
-    <h1 class="text-8xl pt-10 text-center">hai, i'm</h1>
-    <img src="name_plate.png" alt="nibbles" class="h-[10em]" style="image-rendering: pixelated">
-    <p class="text-4xl pt-5 text-center">i'm a programmer/game developer/music composer who's been making stuff for over 5 years!!</p>
-    <p class="text-3xl pt-5 text-center">here are some languages i know sorted by how much i like them!</p>
+    
+    <div class="w-full lg:flex pb-10 lg:pb-30">
+        <img src="banner.png" alt="banner" class="w-full lg:w-[45%] object-left object-contain" style="image-rendering: pixelated">
+        <div class="w-full lg:w-[50%] flex-col lg:pt-20">
+            <h1 class="text-9xl text-center w-full">hai, i'm</h1>
+            <img src="name_plate.png" alt="nibbles" class="h-[15em] object-center w-full object-contain" style="image-rendering: pixelated">
+        </div>
+    </div>
+    <p class="text-4xl pt-5 text-center pl-3 pr-3">i'm a programmer/game developer/music composer who's been making stuff for over 5 years!!</p>
+    <p class="text-3xl pt-5 text-center pl-3 pr-3">here are some languages i know sorted by how much i like them!</p>
 
-    <div class="flex flex-row items-center flex-wrap justify-center">
+    <div class="flex flex-row items-center flex-wrap justify-center pl-3 pr-3">
         {#each langs as lang}
         <div>
             <img src={lang[0]} class="w-[6em] h-[6em] p-2 absolute z-10" alt={lang[1]}/>
@@ -42,9 +48,9 @@
         {/each}
     </div>
 
-    <p class="text-3xl pt-5 text-center">and the same thing but with tools/frameworks/software in no particular order (i love them all)!</p>
+    <p class="text-3xl pt-5 text-center pl-3 pr-3">and the same thing but with tools/frameworks/software in no particular order (i love them all)!</p>
 
-    <div class="flex flex-row items-center flex-wrap justify-center">
+    <div class="flex flex-row items-center flex-wrap justify-center pl-3 pr-3">
         {#each tools as tool}
         <div>
             <img src={tool[0]} class="w-[6em] h-[6em] p-2 absolute z-10 object-contain" alt={tool[1]}/>
