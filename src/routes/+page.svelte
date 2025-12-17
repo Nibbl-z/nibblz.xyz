@@ -1,4 +1,7 @@
 <script lang="ts">
+    import { projects } from "$lib/constants";
+    import Project from "../components/Project.svelte";
+    
     let langs = [
         ["https://raw.githubusercontent.com/vscode-icons/vscode-icons/c15969c0d34ac738bde5a6416fc9c79727eaee37/icons/file_type_luau.svg", "Luau"],
         ["https://raw.githubusercontent.com/vscode-icons/vscode-icons/c15969c0d34ac738bde5a6416fc9c79727eaee37/icons/file_type_rust.svg", "Rust"],
@@ -14,7 +17,7 @@
 
     let tools = [
         ["https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg", "VS Code"],
-        ["https://love2d.org/favicon.ico", "Love2D"],
+        ["https://dl.flathub.org/media/org/love2d/love2d/8230b18f40cc60f448a51e43910c64ce/icons/128x128@2/org.love2d.love2d.png", "Love2D"],
         ["https://upload.wikimedia.org/wikipedia/commons/4/42/Roblox_Studio_Logo_2022.png", "Roblox Studio"],
         ["https://elttob.uk/Fusion/0.3/assets/logo-dark.svg", "Fusion"],
         ["https://avatars.githubusercontent.com/u/4350249?s=200&v=4", "Spigot"],
@@ -23,12 +26,14 @@
         ["https://appwrite.io/assets/logomark/logo.png", "Appwrite"],
         ["https://raw.githubusercontent.com/emilk/egui/refs/heads/main/web_demo/favicon.ico", "egui"]
     ]
+
+    let featured_projects = [projects["kaboom"], projects["playyan"], projects["mysteryproj"]]
 </script>
 
 <div class="flex flex-col items-center">
     
     <div class="w-full h-110 md:h-150 absolute -z-10">
-        <img src="banner.png" alt="banner" class="w-full h-full object-cover object-top-left" style="image-rendering: pixelated">
+        <img src="banner.png" alt="banner" class="w-full h-full object-cover object-top-left mask-b-from-70%" style="image-rendering: pixelated">
     </div>
     <div class="w-full flex-col pt-80 lg:pt-30">
         <h1 class="text-9xl text-center w-full text-shadow-lg/50">hai, i'm</h1>
@@ -62,6 +67,14 @@
             <p class="text-center text-sm">{tool[1]}</p>
         </div>
         
+        {/each}
+    </div>
+
+    <p class="text-4xl pt-5 text-center pl-3 pr-3 mt-10">here are my current coolest projects:</p>
+
+    <div class="flex flex-col items-center p-30">
+        {#each featured_projects as project}
+            <Project name={project.name} image={project.image} description={project.description} footer={project.footer} link={project.link}/>
         {/each}
     </div>
 </div>
