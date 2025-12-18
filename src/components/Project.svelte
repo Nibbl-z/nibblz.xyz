@@ -23,7 +23,7 @@
             <p class="text-xl text-center text-gray-500!">{footer}</p>
         {/if}
         <button class="w-full pt-5 border-8 border-[#7BE7FF] hover:border-[#0821FF]">
-            <a class="text-center text-6xl" href={link}>Check it out!</a>
+            <a class="text-center text-6xl" href={link} target="_blank">Check it out!</a>
         </button>
     </div>
     

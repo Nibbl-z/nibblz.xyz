@@ -3,6 +3,7 @@
 		"*.css": "tailwindcss"
 	},
 	"conventionalCommits.scopes": [
-		"mainpage"
+		"mainpage",
+		"projectspage"
 	]
 }
