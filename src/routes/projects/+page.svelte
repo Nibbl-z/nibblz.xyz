@@ -10,7 +10,6 @@
             "goosepurgatory",
             "biribiriuofishing",
             "imageplayground",
-            "yan",
             "gooseodyssey",
             "gooseplatformer",
             "gooseplatformertogether",
@@ -25,13 +24,33 @@
             "tengokunightwalkwii",
             "tengokudeltarune",
             "yanimator"
+        ],
+        "Miscallaneous" : [
+            "yan",
+            "biribiri",
+            "nibblesdeepdark",
+            "cmbminigames1",
+            "cmbminigames2",
+            "bmp2goose",
+            "mixtaper",
+            "yansstupiddecks",
+            "chromapperdraggablewindows",
+            "chromappermenubg"
         ]
     }
 </script>
 
-<h1 class="text-9xl text-center p-10">projectss</h1>
+<div class="w-full h-110 md:h-150 absolute -z-10">
+        <img src="banner2.png" alt="banner2" class="w-full h-full object-cover object-top-left mask-b-from-70%" style="image-rendering: pixelated">
+    </div>
+    <div class="w-full flex-col pt-80 lg:pt-30">
+        <h1 class="text-9xl text-center w-full text-shadow-lg/50">my projects!!</h1> 
+    </div>
 
 <div class="p-30">
+    <button class="w-full pt-5 border-8 m-10 border-[#7BE7FF] hover:border-[#0821FF]">
+        <a class="text-center text-6xl" href="/">back to main page</a>
+    </button>
     {#each Object.entries(categories) as [name, category]}
         <h1 class="text-6xl text-center p-10">{name}</h1>
         {#each category as id}

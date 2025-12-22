@@ -85,7 +85,7 @@ export const projects:  {[id: string] : {name: string, image: string, descriptio
     },
     "gooseplatformertogether" : {
         name : "Goose Platformer Together",
-        image : "", // its also gone :(
+        image : "gooseplatformertogether.jpg",
         description : "Goose Platformer Together is a platformer game that loads levels from Goose Platformer. And allows you to goose around with your friends. Online. That's it.",
         footer : "we will never understand why he didn't add the editor to this version",
         link : "https://github.com/Nibbl-z/goose-platformer-multiplayer"
@@ -123,14 +123,14 @@ export const projects:  {[id: string] : {name: string, image: string, descriptio
 
     "heavenstudio" : {
         name : "Heaven Studio (Contributions)",
-        image : "", // what kinda image do i put here??
+        image : "heavenstudio.png",
         description : "I made Fruit Basket. It's in the Bobby Build now. I started it way before the DMCA, it took like over 3 years :P",
         footer : undefined,
         link : "https://sites.google.com/view/hsbobbybuild/"
     },
     "rhythmtengokudecomp" : {
         name : "Rhythm Tengoku Decompliation (Contributions)",
-        image : "", // or here??
+        image : "rhythmtengokudecomp.png",
         description : `In the main repository, I decompiled the engines for Rhythm Toys and Staff Credit, as well as most of Clappy Trio.
         
         I also have WAY too many engine decompliations that are almost finished, usually only missing 1 or 2 functions, or not being documented fully, including:
@@ -150,21 +150,21 @@ export const projects:  {[id: string] : {name: string, image: string, descriptio
     },
     "tengokunightwalkwii" : {
         name : "Fever Night Walk ported to Tengoku",
-        image : "", // todo
+        image : "nightwalkwii.png",
         description : "This was my first Rhythm Tengoku mod, which adds the roll cue from Fever's night walk into Tengoku, and also adds the chart and song from Fever. And also flying biribiriuo instead of huebirds :P",
         footer : "soon we will see we're living the dreams of OUR GENERAATIONNN",
         link : "https://github.com/Nibbl-z/rhythmtengoku/tree/night-walk-wii-port"
     },
     "tengokudeltarune" : {
         name : "Deltarune Battle System ported to Tengoku",
-        image : "", // todo
+        image : "rhythmtengokudeltarune.png",
         description : "This is the stupidest thing I have ever made but I love it. It's not fully finished, I'll do that one day, but in Night Walk 2, you encounter a battle with the Biribiriuo. I've implemented most of the menu functionality, the fighting system, and the actual attacks with hit detection and HP and whatnot, giving Biribiruo 2 different attack patterns. I guess this can also be seen as a port of Deltarune's battle system to the GBA in general, which is also cool.",
         footer : "Maybe if we don't FIGHT, we can get a SUPERB!",
         link : "https://github.com/Nibbl-z/rhythmtengoku/tree/deltarune_battle"
     },
     "yanimator" : {
         name : "Yanimator",
-        image : "", // todo
+        image : "yanimator.png", // todo
         description : "Yanimator is an animation editor for Rhythm Tengoku. It is... unfinished... but you *are* able to load animations, play animations, edit animation cells, edit animations, and export them. It's just really janky. Also I don't know what the future of this project should be because someone made a recreation of it in C++ that adds every feature I had planned plus more but it wasn't made open source and the developer left RHModding so like...??? Maybe I'll finish it one day???",
         footer : "nibbles try to finish anything rhythm heaven related challenge (IMPOSSIBLE)",
         link : "https://github.com/Nibbl-z/yanimator"
@@ -174,64 +174,64 @@ export const projects:  {[id: string] : {name: string, image: string, descriptio
 
     "yan" : {
         name : "Yan",
-        image : "", // TODO find the image, its gone from tje repo
+        image : "yan.jpg",
         description : "Yan is a simple UI library with many useful elements for Love2D, made to behave similarly to Roblox's UI system. It also has basic instance support, a theming system, and a tweening/animation system. I used this library for all of my Love2D projects past Goose Platformer! There is also a half-baked rewrite of this library that makes it more easy to use and adds documentation, but it's missing most of the features of the main version.",
         footer : "i'm about to rewrite this one for a third time because i want it to be like fusion :P",
         link : "https://github.com/Nibbl-z/Yan"
     },
     "biribiri" : {
         name : "Biribiri",
-        image : "", // todo
+        image : "biribiriuo.webp",
         description : `Biribiri is a Love2D library that adds a bunch of useful miscellaneous tools, including:
         - Timers
         - Easy asset loading
         - math and table functions from Luau`,
-        footer : undefined,
+        footer : "can't find an image for this one, enjoy Biribiriuo.webp",
         link : "https://github.com/Nibbl-z/biribiri"
     },
     "nibblesdeepdark" : {
         name : "Nibbles' Deep Dark",
-        image : "",
+        image : "https://raw.githubusercontent.com/Nibbl-z/NibblesDeepDark/refs/heads/main/extra/thumbnail.png",
         description : `Nibbles' Deep Dark is my first Minecraft mod, which adds more features to the Deep Dark, including:
         - Warden Heart: dropped by the Warden upon death, used to upgrade netherite tools to echo tools
         - Echo Sword/Axe: Does more damage and has a chance to inflict extra knockback and darkness
         - Echo Bow/Crossbow: Using Sculk Arrows with this weapon fires the Warden's sonic boom attack
         - Sculk Dust/Arrows: Sculk dust now drops from sculk blocks, which can upgrade arrows into sculk arrows`,
         footer : "modrinth paid me a whopping ONE dollar for this mod. business is booming",
-        link : "" // todo find the modrinth link im in school rn im not doin that
+        link : "https://modrinth.com/mod/nibbles-deep-dark" 
     },
     "cmbminigames1" : {
         name : "Cmb Minigames - Sniffer Caretaker",
-        image : "", // pull up the video later dawg
+        image : "https://www.youtube.com/embed/9f2gpLLngks?si=RIGZ1Ej7TWUcBnVe",
         description : "Cmb Minigames is a Minecraft minigames server plugin made by my friend DevCmb. I made the Sniffer Caretaker minigame. It's awesome. I love sniffers!!!",
         footer : "Also there is no actual server to join. I have the rar of the server files with the maps. I'm gatekeeping it :P",
         link : "https://github.com/Cmb-Minigames/CmbMinigamesRandom"
     },
     "cmbminigames2" : {
         name : "Cmb Minigames - Electric Eel",
-        image : "", // pull up the video later dawg
+        image : "https://www.youtube.com/embed/mBtF9S-jots?si=H-7AECdMAiN0lZuf",
         description : "oh yea i made 2 minigames for this server just watch the video its like capture the flag kinda i guess idk",
         footer : undefined,
         link : "https://github.com/Cmb-Minigames/CmbMinigamesRandom"
     },
     "bmp2goose" : {
         name : "Bmp2Goose",
-        image : "",
+        image : "bmp2goose.png",
         description : "Bmp2Goose converts .bmp images to Goose Platformer levels. This was my first project made in rust, and my first time messing with binary data in files, which definitely helped me out later on when making Yanimator!",
         footer : "most useful project of all time",
         link : "https://github.com/Nibbl-z/bmp2goose"
     },
     "mixtaper" : {
         name : "Mixtaper",
-        image : "https://private-user-images.githubusercontent.com/93560873/406638110-8f417eb9-0fa3-4857-b86e-61ab38d0b937.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjYwODQ3MzAsIm5iZiI6MTc2NjA4NDQzMCwicGF0aCI6Ii85MzU2MDg3My80MDY2MzgxMTAtOGY0MTdlYjktMGZhMy00ODU3LWI4NmUtNjFhYjM4ZDBiOTM3LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMTglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjE4VDE5MDAzMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTM3ZDk0MGNhZGQ2MWM4MjdlMDhiNmI3MmU0NmVjNzhhYTRlNjYyMDFjYmNmMTY1MDAxZGViNWE2NjljOTJiNTgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.fKYYquQQhc89THORgbGgMX-tD3syAr09s5Id05dQcE4",
+        image : "https://private-user-images.githubusercontent.com/93560873/406638110-8f417eb9-0fa3-4857-b86e-61ab38d0b937.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjY0MzYzODIsIm5iZiI6MTc2NjQzNjA4MiwicGF0aCI6Ii85MzU2MDg3My80MDY2MzgxMTAtOGY0MTdlYjktMGZhMy00ODU3LWI4NmUtNjFhYjM4ZDBiOTM3LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMjIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjIyVDIwNDEyMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWFhZDMxNzZjMzYwN2JlOGU4MmNmNGFhN2QzOGM4ZTlkNDhiOWIwNTQzMzQ4YjA4ZDMyNzlhMjA1ZDZiNDY4NmYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.8zH7QHrQiPiMocqx-XSGVXo6rYSeaar_9Kv7sTOsM9o",
         description : "Mixtaper,,WAS,, a site to post custom levels for the rhythm game Bits & Bops. The site is dead, and I don't feel like bringing it back because it was really janky. Also the file format for Bits & Bops levels changed. And the game is fully released, and the site only recognizes the first 3 minigames from the demo. Basically, don't use this, there's a reason the site is down. But it was my first proper major web development project!",
         footer : "This project helped me find out how much I despise webdev <3",
         link : "https://github.com/Nibbl-z/Mixtaper"
     },
     "yansstupiddecks" : {
         name : "Yan's Stupid Decks",
-        image : "",
-        description : "this is the part where the category gets Crumbly. This is a Balatro mod that adds a bunch of stupid decks. Modding Balatro is hard.",
+        image : "https://private-user-images.githubusercontent.com/93560873/408775579-8d1d5940-c619-4e99-bd43-391fe5e792e6.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjY0MzYzMzEsIm5iZiI6MTc2NjQzNjAzMSwicGF0aCI6Ii85MzU2MDg3My80MDg3NzU1NzktOGQxZDU5NDAtYzYxOS00ZTk5LWJkNDMtMzkxZmU1ZTc5MmU2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMjIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjIyVDIwNDAzMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTM1YzcwNjgyNTI3ZmVlNmYxNmE5ZDZiYzU1NTJkYjE5NWNkNjg1YjdmYjY3MGI3NzYyMGRlYzUzODcxZTVkZjcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.2gDyhQ1hEjY1RA5lgEtHjGsmJ14kjBIFp0DksujV5_k",
+        description : "this is the part where the category gets Crumbly. This is a Balatro mod that adds a bunch of stupid decks. for example, the one in the image multiplies everything by 10. it barely works. Modding Balatro is hard.",
         footer : "balala joker pokerr",
         link : "https://github.com/Nibbl-z/YansStupidDecks"
     },
@@ -244,7 +244,7 @@ export const projects:  {[id: string] : {name: string, image: string, descriptio
     },
     "chromappermenubg" : {
         name : "Chromapper Custom Menu Backgrounds",
-        image : "",
+        image : "chromappercustombg.png",
         description : "idk if this even works anymore lmao but it changed the backgrounds on the menu. pretty cool",
         footer : undefined,
         link : "https://github.com/Nibbl-z/Chromapper-CustomMenuBackgrounds"

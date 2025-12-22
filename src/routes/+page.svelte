@@ -72,7 +72,12 @@
 
     <p class="text-4xl pt-5 text-center pl-3 pr-3 mt-10">here are my current coolest projects:</p>
 
-    <div class="flex flex-col items-center p-30">
+    
+
+    <div class="flex flex-col items-center pl-30 pr-30">
+        <button class="w-full pt-5 border-8 m-10 border-[#7BE7FF] hover:border-[#0821FF]">
+            <a class="text-center text-6xl" href="/projects">see all projects!!</a>
+        </button>
         {#each featured_projects as project}
             <Project name={project.name} image={project.image} description={project.description} footer={project.footer} link={project.link}/>
         {/each}
