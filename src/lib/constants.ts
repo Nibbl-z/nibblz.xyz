@@ -23,7 +23,7 @@ export const projects:  {[id: string] : {name: string, image: string, descriptio
     // Non-Roblox Games
     "playyan" : {
         name: "Play-Yan Recreation",
-        image: "https://github.com/Nibbl-z/play-yan/blob/main/promotional/cover.png?raw=true",
+        image: "https://img.itch.zone/aW1hZ2UvMjk0MTE4MS8xODU5OTY3MS5wbmc=/original/NEiODX.png",
         description : "This is a recreation of the Play-Yan, an obscure media player made for the GBA that is notorious for being difficult to emulate. It contains all features of the Play-Yan, including audio and video playback, minus the bonus minigames and light mode.",
         footer : undefined,
         link : "https://nibbl-z.itch.io/play-yan"

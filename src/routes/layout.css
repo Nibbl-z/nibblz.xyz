@@ -17,3 +17,47 @@ h1, p, a {
     font-family: Pixellari;
     white-space: pre-line;
 }
+
+@theme {
+  --animate-fadein: fadein 1s ease-out;
+    @keyframes fadein {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1
+        }
+    }
+}
+
+
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1
+  }
+  42% {
+    opacity: 0.6
+  }
+  44% {
+    opacity: 1
+  }
+  46% {
+    opacity: 0.6
+  }
+  48% {
+    opacity: 1
+  }
+  89.9% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}

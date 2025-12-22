@@ -27,19 +27,28 @@
         ["https://raw.githubusercontent.com/emilk/egui/refs/heads/main/web_demo/favicon.ico", "egui"]
     ]
 
+    let accounts = [
+        ["fa-brands fa-github", "GitHub", "https://github.com/Nibbl-z"],
+        ["fa-brands fa-youtube", "YouTube", "https://www.youtube.com/@nibbl_z"],
+        ["fa-brands fa-itch-io", "itch.io", "https://nibbl-z.itch.io/"],
+        ["newgrounds.png", "Newgrounds", "https://nibbl-z.newgrounds.com"],
+        ["fa-brands fa-soundcloud", "Soundcloud", "https://soundcloud.com/nibbl_z"],
+        ["roblox.png", "Roblox", "https://www.roblox.com/users/281430862/profile"]
+    ]
+
     let featured_projects = [projects["kaboom"], projects["playyan"], projects["mysteryproj"]]
 </script>
 
 <div class="flex flex-col items-center">
     
     <div class="w-full h-110 md:h-150 absolute -z-10">
-        <img src="banner.png" alt="banner" class="w-full h-full object-cover object-top-left mask-b-from-70%" style="image-rendering: pixelated">
+        <img src="banner.png" alt="banner" class="w-full h-full object-cover object-top-left mask-b-from-70% animate-fadein" style="image-rendering: pixelated;">
     </div>
     <div class="w-full flex-col pt-80 lg:pt-30">
-        <h1 class="text-9xl text-center w-full text-shadow-lg/50">hai, i'm</h1>
+        <h1 class="text-9xl text-center w-full text-shadow-lg/50 animate-fadein">hai, i'm</h1>
         <div>
-            <img src="name_plate.png" alt="nibbles" class="h-[15em] object-center w-full object-contain absolute z-10" style="image-rendering: pixelated">
-            <img src="name_plate_blur.png" alt="nibbles" class="h-[15em] object-center w-full object-contain blur-md" style="image-rendering: pixelated">
+            <img src="name_plate.png" alt="nibbles" class="h-[15em] object-center w-full object-contain absolute z-10" style="image-rendering: pixelated; animation-name: flicker; animation-duration: 5s; animation-iteration-count: infinite; animation-delay: 1s;">
+            <img src="name_plate_blur.png" alt="nibbles" class="h-[15em] object-center w-full object-contain blur-md animate-fadein" style="image-rendering: pixelated">
         </div>
         
     </div>
@@ -72,14 +81,34 @@
 
     <p class="text-4xl pt-5 text-center pl-3 pr-3 mt-10">here are my current coolest projects:</p>
 
-    
-
-    <div class="flex flex-col items-center pl-30 pr-30">
+    <div class="flex flex-col items-center lg:pl-30 lg:pr-30 pl-3 pr-5">
         <button class="w-full pt-5 border-8 m-10 border-[#7BE7FF] hover:border-[#0821FF]">
             <a class="text-center text-6xl" href="/projects">see all projects!!</a>
         </button>
         {#each featured_projects as project}
             <Project name={project.name} image={project.image} description={project.description} footer={project.footer} link={project.link}/>
         {/each}
+    </div>
+
+    <p class="text-4xl pt-5 text-center pl-3 pr-3 mt-10">also my accounts on a buncha stuff:</p>
+
+    <div class="flex flex-row items-center flex-wrap justify-center pl-3 pr-3 mb-10">
+        {#each accounts as account}
+        <div class="max-w-[4em] max-h-[4em] m-4 flex flex-col items-center">
+            <a class="text-[4em]/0" title="" target="_blank" href={account[2]}>
+                {#if account[0].includes(".")}
+                    <img src={account[0]} alt="">
+                {:else}
+                    <i class={account[0]}></i>
+                {/if}
+            </a>
+            <p class="text-center text-md">{account[1]}</p>
+        </div>
+        
+        {/each}
+    </div>
+
+    <div class="w-full h-110 md:h-150 -z-10">
+        <img src="footer.png" alt="footer" class="w-full h-full object-cover object-top-left mask-t-from-80% animate-fadein" style="image-rendering: pixelated;">
     </div>
 </div>
