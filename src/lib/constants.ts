@@ -2,10 +2,10 @@ export const projects:  {[id: string] : {name: string, image: string, descriptio
     // Roblox
     "mysteryproj" : {
         name: "Mystery Project...",
-        image : "mystery_project.png",
+        image : "/mystery_project.png",
         description : "I CAN'T REVEAL ANYTHING ABOUT THIS ONE QUITE YET BUT IT'S REALLY COOL I PROMISE LIKE IT'S GONNA BE REALLY BIG AND STUFF AND IT LOOKS COOL AND POPULAR PLATINUM STUDIOS SAPPHIRE MEMBER \"DEVCMB\" IS WORKING ON IT TOO SO THATS HOW YOU KNOW ITS GOOD AND ITS MADE BY THE STUDIO THAT BROUGHT YOU PLATINUM MINIGAMES AND KABOOM KOMPETITION AND CMB MINIGAMES",
         footer : "ON EVERYONE'S SOUL",
-        link : "MysteryProjectRealURLOnEveryonesSoulThisIsWhereItIsImLyingActually"
+        link : "/MysteryProjectRealURLOnEveryonesSoulThisIsWhereItIsImLyingActually"
     },
     "kaboom" : {
         name : "Kaboom Kompetition",
@@ -85,7 +85,7 @@ export const projects:  {[id: string] : {name: string, image: string, descriptio
     },
     "gooseplatformertogether" : {
         name : "Goose Platformer Together",
-        image : "gooseplatformertogether.jpg",
+        image : "/gooseplatformertogether.jpg",
         description : "Goose Platformer Together is a platformer game that loads levels from Goose Platformer. And allows you to goose around with your friends. Online. That's it.",
         footer : "we will never understand why he didn't add the editor to this version",
         link : "https://github.com/Nibbl-z/goose-platformer-multiplayer"
@@ -123,14 +123,14 @@ export const projects:  {[id: string] : {name: string, image: string, descriptio
 
     "heavenstudio" : {
         name : "Heaven Studio (Contributions)",
-        image : "heavenstudio.png",
+        image : "/heavenstudio.png",
         description : "I made Fruit Basket. It's in the Bobby Build now. I started it way before the DMCA, it took like over 3 years :P",
         footer : undefined,
         link : "https://sites.google.com/view/hsbobbybuild/"
     },
     "rhythmtengokudecomp" : {
         name : "Rhythm Tengoku Decompliation (Contributions)",
-        image : "rhythmtengokudecomp.png",
+        image : "/rhythmtengokudecomp.png",
         description : `In the main repository, I decompiled the engines for Rhythm Toys and Staff Credit, as well as most of Clappy Trio.
         
         I also have WAY too many engine decompliations that are almost finished, usually only missing 1 or 2 functions, or not being documented fully, including:
@@ -150,21 +150,21 @@ export const projects:  {[id: string] : {name: string, image: string, descriptio
     },
     "tengokunightwalkwii" : {
         name : "Fever Night Walk ported to Tengoku",
-        image : "nightwalkwii.png",
+        image : "/nightwalkwii.png",
         description : "This was my first Rhythm Tengoku mod, which adds the roll cue from Fever's night walk into Tengoku, and also adds the chart and song from Fever. And also flying biribiriuo instead of huebirds :P",
         footer : "soon we will see we're living the dreams of OUR GENERAATIONNN",
         link : "https://github.com/Nibbl-z/rhythmtengoku/tree/night-walk-wii-port"
     },
     "tengokudeltarune" : {
         name : "Deltarune Battle System ported to Tengoku",
-        image : "rhythmtengokudeltarune.png",
+        image : "/rhythmtengokudeltarune.png",
         description : "This is the stupidest thing I have ever made but I love it. It's not fully finished, I'll do that one day, but in Night Walk 2, you encounter a battle with the Biribiriuo. I've implemented most of the menu functionality, the fighting system, and the actual attacks with hit detection and HP and whatnot, giving Biribiruo 2 different attack patterns. I guess this can also be seen as a port of Deltarune's battle system to the GBA in general, which is also cool.",
         footer : "Maybe if we don't FIGHT, we can get a SUPERB!",
         link : "https://github.com/Nibbl-z/rhythmtengoku/tree/deltarune_battle"
     },
     "yanimator" : {
         name : "Yanimator",
-        image : "yanimator.png", // todo
+        image : "/yanimator.png", // todo
         description : "Yanimator is an animation editor for Rhythm Tengoku. It is... unfinished... but you *are* able to load animations, play animations, edit animation cells, edit animations, and export them. It's just really janky. Also I don't know what the future of this project should be because someone made a recreation of it in C++ that adds every feature I had planned plus more but it wasn't made open source and the developer left RHModding so like...??? Maybe I'll finish it one day???",
         footer : "nibbles try to finish anything rhythm heaven related challenge (IMPOSSIBLE)",
         link : "https://github.com/Nibbl-z/yanimator"
@@ -174,14 +174,14 @@ export const projects:  {[id: string] : {name: string, image: string, descriptio
 
     "yan" : {
         name : "Yan",
-        image : "yan.jpg",
+        image : "/yan.jpg",
         description : "Yan is a simple UI library with many useful elements for Love2D, made to behave similarly to Roblox's UI system. It also has basic instance support, a theming system, and a tweening/animation system. I used this library for all of my Love2D projects past Goose Platformer! There is also a half-baked rewrite of this library that makes it more easy to use and adds documentation, but it's missing most of the features of the main version.",
         footer : "i'm about to rewrite this one for a third time because i want it to be like fusion :P",
         link : "https://github.com/Nibbl-z/Yan"
     },
     "biribiri" : {
         name : "Biribiri",
-        image : "biribiriuo.webp",
+        image : "/biribiriuo.webp",
         description : `Biribiri is a Love2D library that adds a bunch of useful miscellaneous tools, including:
         - Timers
         - Easy asset loading
@@ -216,7 +216,7 @@ export const projects:  {[id: string] : {name: string, image: string, descriptio
     },
     "bmp2goose" : {
         name : "Bmp2Goose",
-        image : "bmp2goose.png",
+        image : "/bmp2goose.png",
         description : "Bmp2Goose converts .bmp images to Goose Platformer levels. This was my first project made in rust, and my first time messing with binary data in files, which definitely helped me out later on when making Yanimator!",
         footer : "most useful project of all time",
         link : "https://github.com/Nibbl-z/bmp2goose"
@@ -244,7 +244,7 @@ export const projects:  {[id: string] : {name: string, image: string, descriptio
     },
     "chromappermenubg" : {
         name : "Chromapper Custom Menu Backgrounds",
-        image : "chromappercustombg.png",
+        image : "/chromappercustombg.png",
         description : "idk if this even works anymore lmao but it changed the backgrounds on the menu. pretty cool",
         footer : undefined,
         link : "https://github.com/Nibbl-z/Chromapper-CustomMenuBackgrounds"

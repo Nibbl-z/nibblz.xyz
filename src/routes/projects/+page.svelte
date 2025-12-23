@@ -41,7 +41,7 @@
 </script>
 
 <div class="w-full h-110 md:h-150 absolute -z-10">
-    <img src="banner2.png" alt="banner2" class="w-full h-full object-cover object-top-left mask-b-from-70% animate-fadein" style="image-rendering: pixelated">
+    <img src="../banner2.png" alt="banner2" class="w-full h-full object-cover object-top-left mask-b-from-70% animate-fadein" style="image-rendering: pixelated">
 </div>
 <div class="w-full flex-col pt-80 lg:pt-30">
     <h1 class="text-6xl lg:text-8xl text-center w-full text-shadow-lg/50 animate-fadein">my projects!!</h1> 
@@ -60,5 +60,5 @@
 </div>
 
 <div class="w-full h-110 md:h-150 -z-10">
-    <img src="footer.png" alt="footer" class="w-full h-full object-cover object-top-left mask-t-from-80% animate-fadein" style="image-rendering: pixelated;">
+    <img src="../footer.png" alt="footer" class="w-full h-full object-cover object-top-left mask-t-from-80% animate-fadein" style="image-rendering: pixelated;">
 </div>
