@@ -30,16 +30,26 @@ h1 {
 
 @theme {
   --animate-fadein: fadein 1s ease-out;
-    @keyframes fadein {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1
-        }
-    }
+  --animate-fadeinglow: fadeinglow 1s ease-out;
 }
 
+@keyframes fadein {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1
+  }
+}
+
+@keyframes fadeinglow {
+  0% {
+      opacity: 0.3;
+  }
+  100% {
+      opacity: 0.75;
+  }
+}
 
 @keyframes flicker {
   0% {

@@ -49,33 +49,33 @@
     <div class="w-full flex-col pt-80 lg:pt-30">
         <h1 class="text-9xl text-center w-full text-shadow-lg/50 animate-fadein">hai, i'm</h1>
         <div>
-            <img src="name_plate.png" alt="nibbles" class="h-[15em] object-center w-full object-contain absolute z-10" style="image-rendering: pixelated; animation-name: flicker; animation-duration: 5s; animation-iteration-count: infinite; animation-delay: 1s;">
+            <img src="name_plate.png" alt="nibbles" class="h-[15em] object-center w-full object-contain absolute z-10 animate-fadein" style="image-rendering: pixelated; animation: fadein 1s 1, flicker 5s infinite 2s;">
             <img src="name_plate_blur.png" alt="nibbles" class="h-[15em] object-center w-full object-contain blur-md animate-fadein" style="image-rendering: pixelated">
         </div>
         
     </div>
-    <p class="text-4xl pt-5 text-center pl-3 pr-3">i'm a programmer/game developer/music composer who's been making stuff for over 5 years!!</p>
-    <p class="text-3xl pt-5 text-center pl-3 pr-3">here are some languages i know sorted by how much i like them!</p>
+    <p class="text-4xl pt-5 text-center pl-3 pr-3 opacity-0" style="animation: fadein 1s 1 0.1s; animation-fill-mode: forwards">i'm a programmer/game developer/music composer who's been making stuff for over 5 years!!</p>
+    <p class="text-3xl pt-5 text-center pl-3 pr-3 opacity-0" style="animation: fadein 1s 1 0.2s; animation-fill-mode: forwards">here are some languages i know sorted by how much i like them!</p>
 
     <div class="flex flex-row items-center flex-wrap justify-center pl-3 pr-3">
-        {#each langs as lang}
+        {#each langs as lang, i}
         <div>
-            <img src={lang[0]} class="w-[6em] h-[6em] p-2 absolute z-10" alt={lang[1]}/>
-            <img src={lang[0]} class="w-[6em] h-[6em] p-2 blur-sm opacity-75" alt={lang[1]}/>
-            <p class="text-center text-sm">{lang[1]}</p>
+            <img src={lang[0]} class="w-[6em] h-[6em] p-2 absolute z-10 opacity-0" style={`animation: fadein 1s 1 ${0.5 + (i * 0.1)}s; animation-fill-mode: forwards`} alt={lang[1]}/>
+            <img src={lang[0]} class="w-[6em] h-[6em] p-2 blur-sm opacity-30" style={`animation: fadeinglow 1s 1 ${0.5 + (i * 0.1)}s; animation-fill-mode: forwards`} alt={lang[1]}/>
+            <p class="text-center text-sm opacity-0" style={`animation: fadein 1s 1 ${0.5 + (i * 0.1)}s; animation-fill-mode: forwards`}>{lang[1]}</p>
         </div>
         
         {/each}
     </div>
 
-    <p class="text-3xl pt-5 text-center pl-3 pr-3">and the same thing but with tools/frameworks/software in no particular order (i love them all)!</p>
+    <p class="text-3xl pt-5 text-center pl-3 pr-3 opacity-0" style="animation: fadein 1s 1 0.3s; animation-fill-mode: forwards">and the same thing but with tools/frameworks/software in no particular order (i love them all)!</p>
 
     <div class="flex flex-row items-center flex-wrap justify-center pl-3 pr-3">
-        {#each tools as tool}
+        {#each tools as tool, i}
         <div>
-            <img src={tool[0]} class="w-[6em] h-[6em] p-2 absolute z-10 object-contain" alt={tool[1]}/>
-            <img src={tool[0]} class="w-[6em] h-[6em] p-2 blur-sm object-contain opacity-75" alt={tool[1]}/>
-            <p class="text-center text-sm">{tool[1]}</p>
+            <img src={tool[0]} class="w-[6em] h-[6em] p-2 absolute z-10 opacity-0" style={`animation: fadein 1s 1 ${0.5 + (i * 0.1)}s; animation-fill-mode: forwards`} alt={tool[1]}/>
+            <img src={tool[0]} class="w-[6em] h-[6em] p-2 blur-sm opacity-30" style={`animation: fadeinglow 1s 1 ${0.5 + (i * 0.1)}s; animation-fill-mode: forwards`} alt={tool[1]}/>
+            <p class="text-center text-sm opacity-0" style={`animation: fadein 1s 1 ${0.5 + (i * 0.1)}s; animation-fill-mode: forwards`}>{tool[1]}</p>
         </div>
         
         {/each}
