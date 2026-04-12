@@ -21,6 +21,21 @@ export const projects:  {[id: string] : {name: string, image: string, descriptio
     },
 
     // Non-Roblox Games
+    "gooseplatformer3d" : {
+        name: "Goose Platformer 3D",
+        image: "/gooseplatformer3d.png",
+        description: `
+        A 3D platformer game/sandbox with a level editor and a goose. Made in Love2D with the g3d library for basic 3D rendering. Everything else is made from scratch! The game includes:
+
+        A custom and smooth player movement physics engine
+        A custom player animation system
+        Fully featured level editor built from scratch, with many useful features such as copy/paste/duplicate, undo/redo history, snapping, and a properties window with several options to change on platforms such as color, material, and collision
+        Three built-in levels, all made with the level editor that YOU can use too!!!
+        
+        This is BY FAR my most ambitious Love2D project, and I'm REALLY HAPPY with how it turned out!! :D`,
+        footer : "Also the web build is pretty broken because love.js is weird :P",
+        link : "https://nibbl-z.itch.io/goose-platformer-3d"
+    },
     "playyan" : {
         name: "Play-Yan Recreation",
         image: "https://img.itch.zone/aW1hZ2UvMjk0MTE4MS8xODU5OTY3MS5wbmc=/original/NEiODX.png",
@@ -50,6 +65,16 @@ export const projects:  {[id: string] : {name: string, image: string, descriptio
         This game was made for Hack Club Daydream, with the theme "Sacrifices must be made".`,
         footer : "This game is also very much inspired by Grace Reprieve and Nullscapes.",
         link : "https://nibbl-z.itch.io/goose-purgatory"
+    },
+    "gooseinthemines" : {
+        name : "Goose in the Mines",
+        image: "https://img.itch.zone/aW1nLzI1OTA0NjA0LnBuZw==/315x250%23c/J521F8.png",
+        description : `Goose in the Mines is an endless procedurally generated survival game. You play a goose, stranded in the mines, in which you must mine for resources, upgrade your tools, and fight off the evil grey geese.
+        This game was made for Hack Club Campfire, with the theme "Beneath the surface"
+        ... i'm not really that proud of how this game turned out compared to my previous game jam at hack club but uh. maybe its because i missed the first 8 hours :P 
+        `,
+        footer : "you are beneath the surface...you must mine and survive...",
+        link : "https://nibbl-z.itch.io/goose-in-the-mines"
     },
     "biribiriuofishing" : {
         name : "Biribiriuo Fishing",
@@ -155,6 +180,13 @@ export const projects:  {[id: string] : {name: string, image: string, descriptio
         footer : "soon we will see we're living the dreams of OUR GENERAATIONNN",
         link : "https://github.com/Nibbl-z/rhythmtengoku/tree/night-walk-wii-port"
     },
+    "tengokumolecano" : {
+        name : "Molecano ported to Tengoku",
+        image : "/molecano.png",
+        description : "This is my latest Rhythm Tengoku mod. It ports all of the necessary gameplay cues and sprites from the Bits and Bops minigame \"Molecano\". It's also apparently the first full game recreation done in Rhythm Tengoku. Wow! And guess what! It's ALSO not fully finished! WHEN WILL I EVER FINISH ANYTHING RELATED TO THIS GAME?!?!?!?!",
+        footer : "this is your reminder to play the hit game Bits and Bops available on Steam !",
+        link : "https://github.com/Nibbl-z/rhythmtengoku/tree/molecano"
+    },
     "tengokudeltarune" : {
         name : "Deltarune Battle System ported to Tengoku",
         image : "/rhythmtengokudeltarune.png",
@@ -174,9 +206,9 @@ export const projects:  {[id: string] : {name: string, image: string, descriptio
 
     "yan" : {
         name : "Yan",
-        image : "/yan.jpg",
-        description : "Yan is a simple UI library with many useful elements for Love2D, made to behave similarly to Roblox's UI system. It also has basic instance support, a theming system, and a tweening/animation system. I used this library for all of my Love2D projects past Goose Platformer! There is also a half-baked rewrite of this library that makes it more easy to use and adds documentation, but it's missing most of the features of the main version.",
-        footer : "i'm about to rewrite this one for a third time because i want it to be like fusion :P",
+        image : "/yan banner.png",
+        description : "Yan is a simple UI library for Love2D, based on Roblox's UI system and inspired by Elttob's Fusion library. It features a very compact and easy to type nested syntax similar to HTML, many types of UI elements, mouse enter, exit, and click events, list layouts, padding, styling, tweening, and property updating! It's also fully documented! I used this library heavily when making Goose Platformer 3D, and it was SUCH a joy to work with compared to the older version of Yan. Yea. Please don't look at the branches. Do not use the legacy Yan. It is bad.",
+        footer : "roblox has the best ui paradigm, fight me",
         link : "https://github.com/Nibbl-z/Yan"
     },
     "biribiri" : {
@@ -188,6 +220,22 @@ export const projects:  {[id: string] : {name: string, image: string, descriptio
         - math and table functions from Luau`,
         footer : "can't find an image for this one, enjoy Biribiriuo.webp",
         link : "https://github.com/Nibbl-z/biribiri"
+    },
+    "treetumblers" : {
+        name : "Tree Tumblers",
+        image: "https://flavortown.hackclub.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Mjg3NTQ5LCJwdXIiOiJibG9iX2lkIn19--4e30b16c5db96e2d93c549ea3dde1903d7229663/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbODAwLDgwMF0sInNhdmVyIjp7InN0cmlwIjp0cnVlLCJxdWFsaXR5Ijo3NX19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--b31f00576a4e60a9662bd00307d0a77b5bfc6d7e/pasted-2026-04-10T02-28-26-143Z.png",
+        description : `This is a work-in-progress Minecraft event plugin made in collaboration with my friend DevCmb. It's inspired by many other events such as Minecraft Championship and Block Wars, but its open source... so anyone can host it...!
+        
+        Currently, the plan is to have 4 games in the first version of the event, alongside one final game:
+        1. Crumble - Concept originates from MatMart (yes, the geometry dash youtuber, and yes we got permission :P), a class-based PVP game with abilities and kill bonuses, as well as a map that slowly crumbles towards the center!
+        2. Deathrun - One team triggers traps, the rest must reach the end of the obstacle course without being killed by the trappers!
+        3. Party - A buncha micro-games against other teams! This one's still in development :P
+        4. Sniffer Caretaker - I'M MAKING THIS ONE!!! This is a cooperation based game in which you need to tend to a bunch of tasks that The Sniffer requests from you, ranging from feeding it bread, to giving it dirt to sniff, to bringing animals to its pen when it's lonely!
+        
+        And lastly, the finale game is planned to be a high-stakes tactical shooter, in which everyone gets crossbows that instakill. This one's still being planned... but uh... I'll be making it...!!!
+        `,
+        footer : "You may be wondering where the name Tree Tumblers comes from. As per DevCmb: \"idk\"",
+        link : "https://github.com/CmbsMinecraftPlugins/TreeTumblers"
     },
     "nibblesdeepdark" : {
         name : "Nibbles' Deep Dark",
@@ -203,7 +251,7 @@ export const projects:  {[id: string] : {name: string, image: string, descriptio
     "cmbminigames1" : {
         name : "Cmb Minigames - Sniffer Caretaker",
         image : "https://www.youtube.com/embed/9f2gpLLngks?si=RIGZ1Ej7TWUcBnVe",
-        description : "Cmb Minigames is a Minecraft minigames server plugin made by my friend DevCmb. I made the Sniffer Caretaker minigame. It's awesome. I love sniffers!!!",
+        description : "Cmb Minigames is a Minecraft minigames server plugin made by my friend DevCmb. I made the Sniffer Caretaker minigame. It's awesome. I love sniffers!!!... And yes, this is the predecessor to Sniffer Caretaker in Tree Tumblers (as seen above). This version is quite inferior tbh!",
         footer : "Also there is no actual server to join. I have the rar of the server files with the maps. I'm gatekeeping it :P",
         link : "https://github.com/Cmb-Minigames/CmbMinigamesRandom"
     },

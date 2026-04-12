@@ -38,7 +38,7 @@
         ["roblox.png", "Roblox", "https://www.roblox.com/users/281430862/profile"]
     ]
 
-    let featured_projects = [projects["kaboom"], projects["playyan"], projects["mysteryproj"]]
+    let featured_projects = [projects["gooseplatformer3d"], projects["yan"], projects["kaboom"], projects["playyan"], projects["mysteryproj"]]
 </script>
 
 <div class="flex flex-col items-center">

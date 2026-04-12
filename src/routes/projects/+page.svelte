@@ -4,8 +4,10 @@
     //{[id: string]: string[]}
     let categories: {[id: string] : string[]} = {
         "Roblox" : ["kaboom", "mysteryproj"],
-        "Non-Roblox Games" : [
+        "Love2D and Other Game Frameworks" : [
+            "gooseplatformer3d",
             "playyan",
+            "yan",
             "gooserhythm",
             "goosepurgatory",
             "biribiriuofishing",
@@ -13,6 +15,7 @@
             "gooseodyssey",
             "gooseplatformer",
             "gooseplatformertogether",
+            "gooseinthemines",
             "gooseplatformerendless",
             "goosesurvival",
             "gooseroguelike",
@@ -21,16 +24,19 @@
         "Rhythm Heaven" : [
             "heavenstudio",
             "rhythmtengokudecomp",
+            "tengokumolecano",
             "tengokunightwalkwii",
             "tengokudeltarune",
             "yanimator"
         ],
-        "Miscallaneous" : [
-            "yan",
-            "biribiri",
+        "Minecraft" : [
+            "treetumblers",
             "nibblesdeepdark",
             "cmbminigames1",
             "cmbminigames2",
+        ],
+        "Miscallaneous" : [
+            "biribiri",
             "bmp2goose",
             "mixtaper",
             "yansstupiddecks",
