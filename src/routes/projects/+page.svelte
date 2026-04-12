@@ -54,8 +54,10 @@
 </div>
 
 <div class="lg:p-30 p-5 mt-30">
-    <button class="w-full pt-5 border-8 border-[#7BE7FF] hover:border-[#0821FF]">
-        <a class="text-center text-6xl" href="/">back to main page</a>
+    <button class="w-full pt-5 border-8 border-[#7BE7FF] hover:border-blue-500 transition-all relative">
+        <p class="text-center text-6xl">back to main page</p>
+
+        <a class="absolute top-0 bottom-0 left-0 right-0" href="/" title=""></a>
     </button>
     {#each Object.entries(categories) as [name, category]}
         <h1 class="text-4xl lg:text-6xl text-center p-10">{name}</h1>

@@ -36,8 +36,9 @@
             {#if footer}
                 <p class="text-xl text-center text-gray-500!">{footer}</p>
             {/if}
-            <button class="w-full pt-5 border-8 border-[#7BE7FF] hover:border-[#0821FF]">
-                <a class="text-center text-6xl" href={link} target="_blank">Check it out!</a>
+            <button class="w-full pt-5 border-8 border-[#7BE7FF] hover:border-blue-500 transition-all relative">
+                <p class="text-center text-6xl">Check it out!</p>
+                <a class="absolute top-0 bottom-0 left-0 right-0" href={link} target="_blank" title=""></a>
             </button>
         </div>
         

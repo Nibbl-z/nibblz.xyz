@@ -28,6 +28,10 @@ h1 {
     overflow: hidden
 }
 
+#social:hover {
+  color: blue
+}
+
 @theme {
   --animate-fadein: fadein 1s ease-out;
   --animate-fadeinglow: fadeinglow 1s ease-out;

@@ -33,9 +33,9 @@
         ["fa-brands fa-github", "GitHub", "https://github.com/Nibbl-z"],
         ["fa-brands fa-youtube", "YouTube", "https://www.youtube.com/@nibbl_z"],
         ["fa-brands fa-itch-io", "itch.io", "https://nibbl-z.itch.io/"],
-        ["newgrounds.png", "Newgrounds", "https://nibbl-z.newgrounds.com"],
+        ["newgrounds", "Newgrounds", "https://nibbl-z.newgrounds.com"],
         ["fa-brands fa-soundcloud", "Soundcloud", "https://soundcloud.com/nibbl_z"],
-        ["roblox.png", "Roblox", "https://www.roblox.com/users/281430862/profile"]
+        ["roblox", "Roblox", "https://www.roblox.com/users/281430862/profile"]
     ]
 
     let featured_projects = [projects["gooseplatformer3d"], projects["yan"], projects["kaboom"], projects["playyan"], projects["mysteryproj"]]
@@ -84,8 +84,9 @@
     <p class="text-4xl pt-5 text-center pl-3 pr-3 mt-10">here are my current coolest projects:</p>
 
     <div class="flex flex-col items-center lg:pl-30 lg:pr-30 pl-3 pr-5">
-        <button class="w-full pt-5 border-8 m-10 border-[#7BE7FF] hover:border-[#0821FF]">
-            <a class="text-center text-6xl" href="/projects">see all projects!!</a>
+        <button class="w-full pt-5 border-8 m-10 border-[#7BE7FF] hover:border-blue-500 transition-all relative">
+            <p class="text-center text-6xl">see all projects!!</p>
+            <a class="absolute top-0 bottom-0 left-0 right-0" href="/projects" title=""></a>
         </button>
         {#each featured_projects as project}
             <Project name={project.name} image={project.image} description={project.description} footer={project.footer} link={project.link}/>
@@ -96,12 +97,13 @@
 
     <div class="flex flex-row items-center flex-wrap justify-center pl-3 pr-3 mb-10">
         {#each accounts as account}
-        <div class="max-w-[4em] max-h-[4em] m-4 flex flex-col items-center">
+        <div class="max-w-[4em] max-h-[4em] m-4 flex flex-col items-center relative">
             <a class="text-[4em]/0" title="" target="_blank" href={account[2]}>
-                {#if account[0].includes(".")}
-                    <img src={account[0]} alt="">
+                {#if !account[0].includes("fa")}
+                    <img src={account[0] + ".png"} class="hover:opacity-0 transition-all absolute" alt="">
+                    <img src={account[0] + "_hovered.png"} alt="">
                 {:else}
-                    <i class={account[0]}></i>
+                    <i class={account[0] + " hover:text-blue-500 transition-all"}></i>
                 {/if}
             </a>
             <p class="text-center text-md">{account[1]}</p>
