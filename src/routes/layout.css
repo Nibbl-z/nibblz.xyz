@@ -41,7 +41,6 @@ h1 {
 }
 
 
-
 @keyframes flicker {
   0% {
     opacity: 1;
@@ -64,4 +63,12 @@ h1 {
   100% {
     opacity: 1;
   }
+}
+
+.fade {
+  transition: opacity 1s ease;
+  opacity: 1;
+}
+.notvisible {
+  opacity: 0.3;
 }
