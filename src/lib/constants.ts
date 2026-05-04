@@ -15,7 +15,9 @@ export const projects:  {[id: string] : {name: string, image: string, descriptio
 
         You earn Tokens and XP based on your performance during the rounds, which can be exchanged for weapon skins and emotes, as well as many abilities that can enhance your gameplay.
 
-        There are 11 different gamemodes, 7 different modifiers, and 7 maps, resulting in a total of 539 different combinations!`,
+        There are 11 different gamemodes, 7 different modifiers, and 7 maps, resulting in a total of 539 different combinations!
+        
+        Side note: I heavily dislike the publishing changes and all the other bs that Roblox has been doing to their platform recently. I will NOT be paying $5 a month to publish games, I will NOT be giving identification, and I will NOT be doing an AI face scan. I'm done with this platform!`,
         footer : undefined,
         link : "https://www.roblox.com/games/13146174045/Kaboom-Kompetition"
     },
@@ -223,19 +225,19 @@ export const projects:  {[id: string] : {name: string, image: string, descriptio
     },
     "treetumblers" : {
         name : "Tree Tumblers",
-        image: "https://flavortown.hackclub.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Mjg3NTQ5LCJwdXIiOiJibG9iX2lkIn19--4e30b16c5db96e2d93c549ea3dde1903d7229663/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbODAwLDgwMF0sInNhdmVyIjp7InN0cmlwIjp0cnVlLCJxdWFsaXR5Ijo3NX19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--b31f00576a4e60a9662bd00307d0a77b5bfc6d7e/pasted-2026-04-10T02-28-26-143Z.png",
-        description : `This is a work-in-progress Minecraft event plugin made in collaboration with my friend DevCmb. It's inspired by many other events such as Minecraft Championship and Block Wars, but its open source... so anyone can host it...!
+        image: "https://www.youtube.com/embed/WFtXUpfsdHM",
+        description : `This is a Minecraft event plugin made in collaboration with my friend DevCmb. It's inspired by many other events such as Minecraft Championship and Block Wars, but it's open source... so anyone can host it...!
         
-        Currently, the plan is to have 4 games in the first version of the event, alongside one final game:
+        The first release of this event comes with four games:
         1. Crumble - Concept originates from MatMart (yes, the geometry dash youtuber, and yes we got permission :P), a class-based PVP game with abilities and kill bonuses, as well as a map that slowly crumbles towards the center!
         2. Deathrun - One team triggers traps, the rest must reach the end of the obstacle course without being killed by the trappers!
-        3. Party - A buncha micro-games against other teams! This one's still in development :P
-        4. Sniffer Caretaker - I'M MAKING THIS ONE!!! This is a cooperation based game in which you need to tend to a bunch of tasks that The Sniffer requests from you, ranging from feeding it bread, to giving it dirt to sniff, to bringing animals to its pen when it's lonely!
+        3. Party - A fast-paced minigames game where you fight in solo and team minigames!
+        4. Sniffer Caretaker - I MADE THIS ONE!!! This is a cooperation based game in which you need to tend to a bunch of tasks that The Sniffer requests from you, ranging from feeding it bread, to giving it dirt to sniff, to bringing animals to its pen when it's lonely!
         
-        And lastly, the finale game is planned to be a high-stakes tactical shooter, in which everyone gets crossbows that instakill. This one's still being planned... but uh... I'll be making it...!!!
+        And lastly, the finale game, Breach. It's a high-stakes tactical game in which you need to steal the other teams Star. One player on each team gets to hold the star, which can be stolen by killing said player and picking it up before their teammates can. The first one to win 3 rounds, wins the event!
         `,
         footer : "You may be wondering where the name Tree Tumblers comes from. As per DevCmb: \"idk\"",
-        link : "https://github.com/CmbsMinecraftPlugins/TreeTumblers"
+        link : "https://modrinth.com/plugin/tree-tumblers"
     },
     "nibblesdeepdark" : {
         name : "Nibbles' Deep Dark",
@@ -250,14 +252,14 @@ export const projects:  {[id: string] : {name: string, image: string, descriptio
     },
     "cmbminigames1" : {
         name : "Cmb Minigames - Sniffer Caretaker",
-        image : "https://www.youtube.com/embed/9f2gpLLngks?si=RIGZ1Ej7TWUcBnVe",
+        image : "https://www.youtube.com/embed/9f2gpLLngks",
         description : "Cmb Minigames is a Minecraft minigames server plugin made by my friend DevCmb. I made the Sniffer Caretaker minigame. It's awesome. I love sniffers!!!... And yes, this is the predecessor to Sniffer Caretaker in Tree Tumblers (as seen above). This version is quite inferior tbh!",
         footer : "Also there is no actual server to join. I have the rar of the server files with the maps. I'm gatekeeping it :P",
         link : "https://github.com/Cmb-Minigames/CmbMinigamesRandom"
     },
     "cmbminigames2" : {
         name : "Cmb Minigames - Electric Eel",
-        image : "https://www.youtube.com/embed/mBtF9S-jots?si=H-7AECdMAiN0lZuf",
+        image : "https://www.youtube.com/embed/mBtF9S-jots",
         description : "oh yea i made 2 minigames for this server just watch the video its like capture the flag kinda i guess idk",
         footer : undefined,
         link : "https://github.com/Cmb-Minigames/CmbMinigamesRandom"
