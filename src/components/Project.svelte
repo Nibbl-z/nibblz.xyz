@@ -30,7 +30,7 @@
                     <img src={image} alt={name} class="xl:w-[50%] max-h-130 object-contain p-2 rounded-2xl"/>
                 {:else}
                 <div class="xl:w-[50%] aspect-video">
-                    <iframe class="aspect-video object-fit p-2 rounded-2xl" src={image} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="w-full aspect-video p-2 rounded-2xl" src={image} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 {/if}
                 
