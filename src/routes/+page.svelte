@@ -24,8 +24,8 @@
         ["https://avatars.githubusercontent.com/u/4350249?s=200&v=4", "Spigot"],
         ["https://avatars.githubusercontent.com/u/7608950?s=200&v=4", "PaperMC"],
         ["DecompMe.png", "decomp.me"],
-        ["https://appwrite.io/assets/logomark/logo.png", "Appwrite"],
-        ["https://raw.githubusercontent.com/emilk/egui/refs/heads/main/web_demo/favicon.ico", "egui"]
+        ["appwrite.png", "Appwrite"],
+        ["egui.png", "egui"]
     ]
 
     let accounts = [
@@ -59,7 +59,7 @@
     <div class="flex flex-row items-center flex-wrap justify-center pl-3 pr-3">
         {#each langs as lang, i}
         <div>
-            <img src={lang[0]} class="w-[6em] h-[6em] p-2 absolute z-10 opacity-0" style={`animation: fadein 1s 1 ${0.5 + (i * 0.1)}s; animation-fill-mode: forwards`} alt={lang[1]}/>
+            <img src={lang[0]} class="w-[6em] h-[6em] p-2 absolute z-10 opacity-0 object-fit" style={`animation: fadein 1s 1 ${0.5 + (i * 0.1)}s; animation-fill-mode: forwards`} alt={lang[1]}/>
             <img src={lang[0]} class="w-[6em] h-[6em] p-2 blur-sm opacity-30" style={`animation: fadeinglow 1s 1 ${0.5 + (i * 0.1)}s; animation-fill-mode: forwards`} alt={lang[1]}/>
             <p class="text-center text-sm opacity-0" style={`animation: fadein 1s 1 ${0.5 + (i * 0.1)}s; animation-fill-mode: forwards`}>{lang[1]}</p>
         </div>
