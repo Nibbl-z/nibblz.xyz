@@ -4,6 +4,7 @@
 	},
 	"conventionalCommits.scopes": [
 		"mainpage",
-		"projectspage"
+		"projectspage",
+		"backend"
 	]
 }
