@@ -1,6 +1,7 @@
 <script lang="ts">
     import { projects } from "$lib/constants";
     import Project from "../components/Project.svelte";
+    import Topbar from "../components/Topbar.svelte";
     
     let langs = [
         ["https://raw.githubusercontent.com/vscode-icons/vscode-icons/c15969c0d34ac738bde5a6416fc9c79727eaee37/icons/file_type_luau.svg", "Luau"],
@@ -38,7 +39,15 @@
     ]
 
     let featured_projects = [projects["gooseplatformer3d"], projects["treetumblers"], projects["yan"], projects["kaboom"], projects["playyan"]]
+
+    let topbar = [
+        ["home", "/"],
+        ["my projects", "/projects"],
+        ["my thoughts", "/thoughts"]
+    ]
 </script>
+
+<Topbar/>
 
 <div class="flex flex-col items-center">
     

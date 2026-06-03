@@ -1,6 +1,7 @@
 <script lang="ts">
     import { projects } from "$lib/constants";
     import Project from "../../components/Project.svelte";
+    import Topbar from "../../components/Topbar.svelte";
     //{[id: string]: string[]}
     let categories: {[id: string] : string[]} = {
         "Games" : [
@@ -46,6 +47,8 @@
         ]
     }
 </script>
+
+<Topbar/>
 
 <div class="w-full h-110 md:h-150 absolute -z-10">
     <img src="../banner2.png" alt="banner2" class="w-full h-full object-cover object-top-left mask-b-from-70% animate-fadein" style="image-rendering: pixelated;">
