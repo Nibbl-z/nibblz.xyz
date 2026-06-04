@@ -18,15 +18,17 @@ body {
     
 }
 
-h1, p, a {
+h1, h2, h3, p, a, li {
     color: white;
     font-family: Pixellari;
     white-space: pre-line;
 }
 
 h1 {
-    overflow: hidden
+  overflow: hidden;
+    
 }
+
 
 #social:hover {
   color: blue
@@ -85,4 +87,14 @@ h1 {
 }
 .notvisible {
   opacity: 0.3;
+}
+
+.thoughtopen {
+  transition: opacity 1s ease;
+  opacity: 0.0;
+}
+
+.thoughtclosed {
+  transition: opacity 1s ease;
+  opacity: 1.0;
 }
