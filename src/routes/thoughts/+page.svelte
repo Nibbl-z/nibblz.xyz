@@ -58,22 +58,24 @@
         ID: string
     }
 
-    let results: PostData[] = []
+    let results: PostData[] = $state([])
 
     async function fetchPosts() {
-        const response = await fetch("localhost:5005/get_posts", {
-            method: "GET"
+        const response = await fetch("http://localhost:5005/get_posts", {
+            method: "GET",
         })
+        console.log("ok")
+        
 
         if (!response.ok) return
         const data = await response.json()
-
+        console.log(data)
         if (data.message != null) {
             console.log("failed to load posts... " + data.message)
             return
         }
 
-        results = data
+        results = data.Posts
     }
 
     onMount(() => {

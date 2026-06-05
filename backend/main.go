@@ -9,11 +9,11 @@ import (
 func main() {
 	router := gin.Default()
 	config := cors.DefaultConfig()
-	config.AllowAllOrigins = true
-	config.AllowHeaders = []string{"Content-Type"}
+	config.AllowOrigins = []string{"http://localhost:5173"}
 
 	router.Use(cors.New(config))
 
+	router.RedirectTrailingSlash = true
 	router.GET("/get_posts", routes.GetPosts)
 	router.GET("/get_post/:id", routes.GetPost)
 
