@@ -47,7 +47,12 @@ func GetPost(c *gin.Context) {
 	var buffer bytes.Buffer
 
 	for scanner.Scan() {
+		
+		buffer.WriteString("\n")
 		buffer.WriteString(scanner.Text())
+		if scanner.Text() == "" {
+			buffer.WriteString("<br>")
+		}
 		buffer.WriteString("\n")
 	}
 	

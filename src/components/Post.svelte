@@ -2,11 +2,12 @@
     import { fade } from 'svelte/transition';
     import { onMount } from "svelte";
 
-    let {name, image, description, timestamp, click}: {
+    let {name, image, description, timestamp, click, id}: {
         name: string, 
         image: string, 
         description: string, 
         timestamp: number,
+        id: string
         click: Function
     } = $props()
 
@@ -38,7 +39,7 @@
                 <p class="text-2xl lg:text-3xl xl:w-[50%] p-2">{description}</p>
             </div>
             <p class="text-xl text-center text-gray-500!">{new Date(timestamp * 1000).toLocaleString()}</p>
-            <button class="w-full pt-5 border-8 border-[#7BE7FF] hover:border-blue-500 transition-all relative" onclick={() => click()}>
+            <button class="w-full pt-5 border-8 border-[#7BE7FF] hover:border-blue-500 transition-all relative" onclick={() => click(id)}>
                 <p class="text-center text-6xl">read!</p>
             </button>
         </div>

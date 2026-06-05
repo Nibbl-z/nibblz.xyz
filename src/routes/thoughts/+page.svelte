@@ -37,11 +37,31 @@
         }
     }
 
-    marked.use({renderer})
+    marked.use({
+        renderer: renderer,
+        breaks: true,
+        gfm: true
+    })
 
     let postOpen = $state(false)
+    let postMd = $state("")
+    let postTitle = $state("")
+    let results: PostData[] = $state([])
 
-    function openPost() {
+    async function openPost(id: string) {
+        const response = await fetch("http://localhost:5005/get_post/" + id, {
+            method: "GET",
+        })
+
+        if (!response.ok) return
+        const data = await response.text()
+
+        let post = results.find((post) => post.ID === id)
+        postTitle = post?.Name || ""
+
+        postMd = data
+        console.log(data)
+
         postOpen = true
         opacity.set(1.0)
     }
@@ -58,18 +78,15 @@
         ID: string
     }
 
-    let results: PostData[] = $state([])
 
     async function fetchPosts() {
         const response = await fetch("http://localhost:5005/get_posts", {
             method: "GET",
         })
-        console.log("ok")
-        
 
         if (!response.ok) return
         const data = await response.json()
-        console.log(data)
+
         if (data.message != null) {
             console.log("failed to load posts... " + data.message)
             return
@@ -96,9 +113,9 @@
             <div class="w-full h-full absolute outline-8 outline-[#0821FF] blur-lg -z-10"></div>
             <div class="w-full h-full absolute bg-black -z-9 opacity-70"></div>
             <div class="p-5">
-                <p class="text-6xl text-center">title</p>
+                <p class="text-6xl text-center">{postTitle}</p>
                 <div>
-                    {@html marked.parse("# helloo \n ## hello! \n ### hellooooo !!!! \n **hai!!!** and *hai* \n- big things are happening \n- reallly big things")}
+                    {@html marked.parse(postMd)}
                 </div>
             </div>
         </div>
@@ -120,6 +137,6 @@
 
 <div class="flex flex-row items-center flex-wrap justify-center pl-5 pr-5">
     {#each results as post}
-        <Post name={post.Name} description={post.Description} image="/biribiriuo.webp" timestamp={post.Timestamp} click={openPost}/>
+        <Post name={post.Name} description={post.Description} image="/biribiriuo.webp" timestamp={post.Timestamp} click={openPost} id={post.ID}/>
     {/each}
 </div>
