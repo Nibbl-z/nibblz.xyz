@@ -3,10 +3,17 @@ package main
 import (
 	"backend/routes"
 	"github.com/gin-gonic/gin"
+	"github.com/gin-contrib/cors"
 )
 
 func main() {
 	router := gin.Default()
+	config := cors.DefaultConfig()
+	config.AllowAllOrigins = true
+	config.AllowHeaders = []string{"Content-Type"}
+
+	router.Use(cors.New(config))
+
 	router.GET("/get_posts", routes.GetPosts)
 	router.GET("/get_post/:id", routes.GetPost)
 

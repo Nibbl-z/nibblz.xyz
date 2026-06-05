@@ -5,6 +5,7 @@
     import { fade } from 'svelte/transition';
     import { Tween } from "svelte/motion";
     import { linear } from "svelte/easing";
+    import { onMount } from "svelte";
 
     const renderer = new Renderer()
 
@@ -49,6 +50,35 @@
         postOpen = false
         opacity.set(0.0)
     }
+
+    interface PostData {
+        Name: string,
+        Description: string,
+        Timestamp: number,
+        ID: string
+    }
+
+    let results: PostData[] = []
+
+    async function fetchPosts() {
+        const response = await fetch("localhost:5005/get_posts", {
+            method: "GET"
+        })
+
+        if (!response.ok) return
+        const data = await response.json()
+
+        if (data.message != null) {
+            console.log("failed to load posts... " + data.message)
+            return
+        }
+
+        results = data
+    }
+
+    onMount(() => {
+        fetchPosts()
+    })
 </script>
 
 <div class="fixed w-screen h-screen z-9 p-0 backdrop-blur-sm" style="opacity: {opacity.current}; pointer-events: {postOpen ? "auto" : "none"}">
@@ -87,8 +117,7 @@
 </div>
 
 <div class="flex flex-row items-center flex-wrap justify-center pl-5 pr-5">
-    <Post name="post name" description="bla bla blaaaa" image="/biribiriuo.webp" timestamp={1780534756} click={openPost}/>
-    <Post name="post name" description="bla bla blaaaa" image="/biribiriuo.webp" timestamp={1780534756} click={openPost}/>
-    <Post name="post name" description="bla bla blaaaa" image="/biribiriuo.webp" timestamp={1780534756} click={openPost}/>
-    <Post name="post name" description="bla bla blaaaa" image="/biribiriuo.webp" timestamp={1780534756} click={openPost}/>
+    {#each results as post}
+        <Post name={post.Name} description={post.Description} image="/biribiriuo.webp" timestamp={post.Timestamp} click={openPost}/>
+    {/each}
 </div>

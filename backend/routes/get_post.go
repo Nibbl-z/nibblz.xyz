@@ -38,7 +38,8 @@ func GetPost(c *gin.Context) {
 	}
 
 	scanner := bufio.NewScanner(file)
-	// skips tha first 2 lines
+	// skips tha first 3 lines
+	scanner.Scan()
 	scanner.Scan()
 	scanner.Scan()
 	// ok,, lets read!

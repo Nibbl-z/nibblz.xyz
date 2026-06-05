@@ -1,15 +1,18 @@
 package routes
 
-import(
+import (
 	"bufio"
 	"net/http"
 	"os"
+	"strconv"
+
 	"github.com/gin-gonic/gin"
 )
 
 type PostMeta struct {
 	Name string;
 	Description string;
+	Timestamp int;
 	ID string;
 }
 
@@ -43,12 +46,22 @@ func GetPosts(c *gin.Context) {
 		name := scanner.Text()
 		scanner.Scan()
 		description := scanner.Text()
+		scanner.Scan()
+		timestamp, err := strconv.Atoi(scanner.Text())
+
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{
+				"message" : "failed to read post data! - " + err.Error(),
+			})
+			return
+		}
 
 		opened.Close()
 		
 		posts = append(posts, PostMeta {
 			Name: name,
 			Description: description,
+			Timestamp: timestamp,
 			ID: file.Name(),
 		})
 	}
