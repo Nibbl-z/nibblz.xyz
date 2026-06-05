@@ -6,6 +6,7 @@
     import { Tween } from "svelte/motion";
     import { linear } from "svelte/easing";
     import { onMount } from "svelte";
+    import { backend } from "$lib/constants";
 
     const renderer = new Renderer()
 
@@ -49,7 +50,7 @@
     let results: PostData[] = $state([])
 
     async function openPost(id: string) {
-        const response = await fetch("http://localhost:5005/get_post/" + id, {
+        const response = await fetch(`${backend}/get_post/${id}`, {
             method: "GET",
         })
 
@@ -75,12 +76,13 @@
         Name: string,
         Description: string,
         Timestamp: number,
+        Image: string,
         ID: string
     }
 
 
     async function fetchPosts() {
-        const response = await fetch("http://localhost:5005/get_posts", {
+        const response = await fetch(`${backend}/get_posts`, {
             method: "GET",
         })
 
@@ -111,10 +113,10 @@
     <div class="w-full h-full md:p-30 p-5 pt-30">
         <div class="border-8 border-[#0821FF] backdrop-blur-lg w-full h-full ">
             <div class="w-full h-full absolute outline-8 outline-[#0821FF] blur-lg -z-10"></div>
-            <div class="w-full h-full absolute bg-black -z-9 opacity-70"></div>
-            <div class="p-5">
+            <div class="w-full h-full absolute bg-black -z-9 opacity-80"></div>
+            <div class="p-5 h-full overflow-y-auto">
                 <p class="text-6xl text-center">{postTitle}</p>
-                <div>
+                <div class="overflow-y-auto">
                     {@html marked.parse(postMd)}
                 </div>
             </div>
@@ -137,6 +139,6 @@
 
 <div class="flex flex-row items-center flex-wrap justify-center pl-5 pr-5">
     {#each results as post}
-        <Post name={post.Name} description={post.Description} image="/biribiriuo.webp" timestamp={post.Timestamp} click={openPost} id={post.ID}/>
+        <Post name={post.Name} description={post.Description} image={post.Image} timestamp={post.Timestamp} click={openPost} id={post.ID}/>
     {/each}
 </div>

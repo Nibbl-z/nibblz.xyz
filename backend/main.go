@@ -16,6 +16,6 @@ func main() {
 	router.RedirectTrailingSlash = true
 	router.GET("/get_posts", routes.GetPosts)
 	router.GET("/get_post/:id", routes.GetPost)
-
+	router.Static("/thumbnails", "./post_thumbnails")
 	router.Run(":5005")
 }

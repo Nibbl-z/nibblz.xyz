@@ -2,6 +2,7 @@ package routes
 
 import (
 	"bufio"
+	"errors"
 	"net/http"
 	"os"
 	"strconv"
@@ -13,6 +14,7 @@ type PostMeta struct {
 	Name string;
 	Description string;
 	Timestamp int;
+	Image string;
 	ID string;
 }
 
@@ -57,11 +59,19 @@ func GetPosts(c *gin.Context) {
 		}
 
 		opened.Close()
+
+		image := "http://localhost:5005/thumbnails/" + file.Name() + ".png"
+
+		_, err = os.Stat("post_thumbnails/" + file.Name() + ".png")
+		if errors.Is(err, os.ErrNotExist) {
+			image = "/biribiriuo.webp" // todo: proper placeholder
+		}
 		
 		posts = append(posts, PostMeta {
 			Name: name,
 			Description: description,
 			Timestamp: timestamp,
+			Image: image,
 			ID: file.Name(),
 		})
 	}
