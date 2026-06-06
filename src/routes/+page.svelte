@@ -20,6 +20,7 @@
     let tools = [
         ["https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg", "VS Code"],
         ["https://dl.flathub.org/media/org/love2d/love2d/8230b18f40cc60f448a51e43910c64ce/icons/128x128@2/org.love2d.love2d.png", "Love2D"],
+        ["FL_Studio_2024.webp", "FL Studio"],
         ["https://elttob.uk/Fusion/0.3/assets/logo-dark.svg", "Fusion"],
         ["https://upload.wikimedia.org/wikipedia/commons/9/9c/IntelliJ_IDEA_Icon.svg", "IntelliJ IDEA"],
         ["https://avatars.githubusercontent.com/u/4350249?s=200&v=4", "Spigot"],

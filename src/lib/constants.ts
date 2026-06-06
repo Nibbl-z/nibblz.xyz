@@ -67,7 +67,7 @@ export const projects:  {[id: string] : {name: string, image: string, descriptio
         CONTINUING will require you to make a SACRIFICE, either weakening yourself or adding/strengthening different CREATURES.
 
         This game was made for Hack Club Daydream, with the theme "Sacrifices must be made".`,
-        footer : "This game is also very much inspired by Grace Reprieve and Nullscapes.",
+        footer : "This game is also very much inspired by Grace Reprieve and Nullscape. I love Nullscape. Its awesome.",
         link : "https://nibbl-z.itch.io/goose-purgatory"
     },
     "gooseinthemines" : {

@@ -25,9 +25,9 @@
         <div class="p-5">
             <h1 class="text-4xl lg:text-6xl">{name}</h1>
             <div class="flex xl:flex-row flex-col pt-5">
-                <p class="text-2xl lg:text-3xl xl:w-[50%] p-2">{description}</p>
+                <p class="text-2xl lg:text-xl xl:w-[50%] p-2">{description}</p>
                 {#if !image.includes("youtube.com")}
-                    <img src={image} alt={name} class="xl:w-[50%] max-h-130 object-contain p-2 rounded-2xl"/>
+                    <img src={image} alt={name} class="xl:w-[50%] max-h-80 object-contain p-2 rounded-2xl"/>
                 {:else}
                 <div class="xl:w-[50%] aspect-video">
                     <iframe class="w-full aspect-video p-2 rounded-2xl" src={image} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

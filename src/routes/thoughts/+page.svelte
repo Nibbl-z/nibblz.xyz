@@ -95,6 +95,7 @@
         }
 
         results = data.Posts
+        results.sort((a, b) => b.Timestamp - a.Timestamp)
     }
 
     onMount(() => {
@@ -103,7 +104,7 @@
 </script>
 
 <div class="fixed w-screen h-screen z-9 p-0 backdrop-blur-sm" style="opacity: {opacity.current}; pointer-events: {postOpen ? "auto" : "none"}">
-    <button class="w-[10em] border-8 m-3 border-[#7BE7FF] hover:border-blue-500 transition-all absolute z-10" onclick={closePost}>
+    <button class="w-[10em] border-8 m-3 border-[#7BE7FF] hover:border-blue-500 transition-all absolute z-10 cursor-pointer" onclick={closePost}>
         <div class="w-full h-full absolute bg-black -z-9 opacity-70"></div>
         <div class="p-2">
             <p class="text-center text-6xl">back</p>
