@@ -7,9 +7,11 @@ import (
 )
 
 func main() {
+	gin.SetMode(gin.ReleaseMode)
+
 	router := gin.Default()
 	config := cors.DefaultConfig()
-	config.AllowOrigins = []string{"http://localhost:5173"}
+	config.AllowOrigins = []string{"http://localhost:5173", "https://nibblz.xyz"}
 
 	router.Use(cors.New(config))
 
