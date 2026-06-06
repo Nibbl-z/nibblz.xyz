@@ -25,3 +25,4 @@ vite.config.ts.timestamp-*
 # Backend stuff
 backend/posts
 backend/post_thumbnails
+backend/post_images

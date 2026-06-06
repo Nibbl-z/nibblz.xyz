@@ -17,5 +17,6 @@ func main() {
 	router.GET("/get_posts", routes.GetPosts)
 	router.GET("/get_post/:id", routes.GetPost)
 	router.Static("/thumbnails", "./post_thumbnails")
+	router.Static("/assets", "./post_images")
 	router.Run(":5005")
 }

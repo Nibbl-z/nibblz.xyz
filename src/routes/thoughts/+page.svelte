@@ -15,7 +15,10 @@
         const levels: Record<number, string> = {
             1: "text-5xl",
             2: "text-4xl",
-            3: "text-3xl"
+            3: "text-3xl",
+            4: "text-2xl",
+            5: "text-xl",
+            6: "text-lg"
         }
 
         return `<h${depth} class="${levels[depth]}">${text}</h${depth}>`
@@ -36,6 +39,10 @@
         } else {
             return `<ul class="list-disc pl-5">${items}</ul>`
         }
+    }
+
+    renderer.link = (token: Tokens.Link) => {
+        return `<a href=${token.href} class="underline">${token.text}</a>`
     }
 
     marked.use({
