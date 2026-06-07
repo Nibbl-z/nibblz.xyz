@@ -1,0 +1,1 @@
+import{f as o,a as p}from"../chunks/DdhX9h8H.js";import"../chunks/JbPNovUi.js";var r=o(`<p class="text-center text-9xl pt-10">there's nothing here...</p>`);function m(t){var e=r();p(t,e)}export{m as component};
