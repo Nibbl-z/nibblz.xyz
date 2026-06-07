@@ -1,4 +1,4 @@
-export const backend = "http://localhost:5005"
+export const backend = "https://nibblzxyzbackend.nibbles.hackclub.app"
 
 export const projects:  {[id: string] : {name: string, image: string, description: string, footer: string | undefined, link: string}} = {
     // Roblox

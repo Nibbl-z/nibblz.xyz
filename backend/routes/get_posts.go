@@ -60,11 +60,11 @@ func GetPosts(c *gin.Context) {
 
 		opened.Close()
 
-		image := "http://localhost:5005/thumbnails/" + file.Name() + ".png"
+		image := "https://nibblzxyzbackend.nibbles.hackclub.app/thumbnails/" + file.Name() + ".png"
 
 		_, err = os.Stat("post_thumbnails/" + file.Name() + ".png")
 		if errors.Is(err, os.ErrNotExist) {
-			image = "/biribiriuo.webp" // todo: proper placeholder
+			image = "/biribiriuo.webp" // todo: proper placeholder?
 		}
 		
 		posts = append(posts, PostMeta {
