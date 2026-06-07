@@ -118,7 +118,7 @@
         </div>
     </button>
 
-    <div class="w-full h-full md:p-30 p-5 pt-30 pb-10">
+    <div class="w-full h-[90%] md:p-30 p-5 pt-30 pb-10">
         <div class="border-8 border-[#0821FF] backdrop-blur-lg w-full h-full ">
             <div class="w-full h-full absolute outline-8 outline-[#0821FF] blur-lg -z-10"></div>
             <div class="w-full h-full absolute bg-black -z-9 opacity-80"></div>
