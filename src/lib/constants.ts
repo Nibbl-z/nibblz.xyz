@@ -207,7 +207,21 @@ export const projects:  {[id: string] : {name: string, image: string, descriptio
     },
 
     // Misc.
-
+    "galapagos" : {
+        name : "Galapagos",
+        image : "/galapagos.png",
+        description : `Galapagos is a client mod to show more info, statistics, and chances related to MCC Island's progression and economy!
+        This mod adds so many features to the server and its hard to explain all of them unless you are as weirdly knowledgable of this server's progression as I am, but to name a few, I've added:
+        - Coin, Quest, Weekly Vault, and Trophy tracking and history menus
+        - Detailed Quest/Cosmetic Machine chances
+        - New cosmetic/royal reputation chance and average trophies/mythic cores/arcane cores per roll on Cosmetic Crates or the Cosmetic Machine
+        - Crafting Instructions
+        
+        And more because I am CONSTANTLY updating this mod with new stuff!!
+        `,
+        footer : "as of this being written, it has been 14 days since i submitted this to modrinth and its STILL not approved </3",
+        link : "https://github.com/Nibbl-z/galapagos"
+    },
     "yan" : {
         name : "Yan",
         image : "/yan banner.png",

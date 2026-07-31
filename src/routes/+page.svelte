@@ -4,8 +4,8 @@
     import Topbar from "../components/Topbar.svelte";
     
     let langs = [
-        ["https://raw.githubusercontent.com/vscode-icons/vscode-icons/c15969c0d34ac738bde5a6416fc9c79727eaee37/icons/file_type_luau.svg", "Luau"],
         ["https://raw.githubusercontent.com/vscode-icons/vscode-icons/55a0c6ba13e04cc5b885378d8f13d03fa2b72c59/icons/file_type_kotlin.svg", "Kotlin"],
+        ["https://raw.githubusercontent.com/vscode-icons/vscode-icons/c15969c0d34ac738bde5a6416fc9c79727eaee37/icons/file_type_luau.svg", "Luau"],
         ["https://raw.githubusercontent.com/vscode-icons/vscode-icons/c15969c0d34ac738bde5a6416fc9c79727eaee37/icons/file_type_lua.svg", "Lua"],
         ["https://raw.githubusercontent.com/vscode-icons/vscode-icons/c15969c0d34ac738bde5a6416fc9c79727eaee37/icons/file_type_rust.svg", "Rust"],
         ["https://raw.githubusercontent.com/vscode-icons/vscode-icons/b07f49907d1da36efabaa5a18989cb66aef006d3/icons/file_type_go_gopher.svg", "Go"],
@@ -25,6 +25,7 @@
         ["https://upload.wikimedia.org/wikipedia/commons/9/9c/IntelliJ_IDEA_Icon.svg", "IntelliJ IDEA"],
         ["https://avatars.githubusercontent.com/u/4350249?s=200&v=4", "Spigot"],
         ["https://avatars.githubusercontent.com/u/7608950?s=200&v=4", "PaperMC"],
+        ["https://docs.fabricmc.net/logo.png", "Fabric"],
         ["DecompMe.png", "decomp.me"],
         ["appwrite.png", "Appwrite"],
         ["egui.png", "egui"]
@@ -39,7 +40,7 @@
         ["roblox", "Roblox", "https://www.roblox.com/users/281430862/profile"]
     ]
 
-    let featured_projects = [projects["gooseplatformer3d"], projects["treetumblers"], projects["yan"], projects["kaboom"], projects["playyan"]]
+    let featured_projects = [projects["treetumblers"], projects["galapagos"], projects["gooseplatformer3d"], projects["yan"], projects["playyan"]]
 
     let topbar = [
         ["home", "/"],
